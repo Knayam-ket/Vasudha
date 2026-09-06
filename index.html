@@ -35,6 +35,9 @@
                 // REPLACE THIS URL with your ngrok forwarding URL + /run-ocr
                 const response = await fetch("https://residence-guise-eastward.ngrok-free.dev/", {
                     method: "POST",
+                    headers: {
+                    "ngrok-skip-browser-warning": "true"
+                    },
                     body: formData
                 });
 
